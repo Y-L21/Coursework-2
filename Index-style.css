@@ -1,0 +1,11 @@
+.details {
+
+    margin: auto;
+    width: 80%;
+    background-color: coral;
+    flex-direction: column;
+    display: flex;
+    align-items: center; /*aligns item in the cross axis*/
+    border-style: solid;
+    border-color: black;
+}
