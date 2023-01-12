@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Experimental-->
+
+<section class="home">
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#about-page">Reservations</a></li>
+                <li><a href="#about-page">Menus</a></li>
+                <li><a href="#meals-page">Private Dining</a></li>
+                <li><a href="#desserts-page">Christmas</a></li>
+                <li><a href="#locations-page">Careers</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo-box">
+        <img src="/images/luca-logo.svg">
+    </div>
+</section>
+
+<!--Experimental-->
+
+
+<!--<div class="home-slideshow">
+    <img src="/images/main header.jpg">
+    <div class="home-logo">
+        <img src="/images/luca-logo.svg">
+    </div>
+</div>    -->
+
+<div class="about-section">
+    <h2>
+        British seasonal ingredients through an Italian lens
+    </h2>
+</div>
+
+<div class="reservation-section">
+    <img src="/images/RESTAURANT_6_157-1-700x467.jpg" >
+    <h2>here</h2>
+</div>
+
+<div class="christmas-section">
+<img src="/images/Cocktail-scaled.jpeg">
+</div>
+
+<div class="luca-bar-section">
+    <img src="/images/RESTAURANT_6_044-1-700x467.jpg">
+</div>
+
+
+<div class="slideshow-2">
+    <img src="/images/2018.11.18_LUCA_20_0017.jpg">
+</div>
+
+<div class="private-dining-section">
+    <img src="/images/Garden-Room-scaled.jpeg">
+</div>
+
+<div class="gifts-experiences">
+    <img src="/images/RESTAURANT_6_096-700x452.jpg">
+</div>
+
+<h1>
+    h1
+</h1>
+
+<!--h2 doesn't look the same as the website, same font but too thick-->
+
+<p>
+    p
+</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="/images/2018.11.18_LUCA_20_0017.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="/images/2018.11.18_LUCA_06_0007.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="/images/Cocktail-scaled.jpeg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="/images/2018.11.18_LUCA_10_0005.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="/images/2018.11.18_LUCA_21_0028.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="/images/2018.11.18_LUCA_09_0010.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="/images/2018.11.18_LUCA_12_0021.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="/images/2018.11.18_LUCA_21_0028.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m8!1d4964.714889654688!2d-0.1075109281247961!8d51.52500891855186!2m8!1f0!2f0!8f0!8m2!1i1024!2i768!4f18.1!4m18!8e6!4m5!1s0x48761ca7b1d88851%8A0x570d19c20ab22a88!2sCity%2C%20University%20of%20London%2C%20Northampton%20Square%2C%20London!8m2!1d51.5279719!2d-0.1024624!4m5!1s0x48761b51100724a7%8A0xc779912dc42da7d4!2sLuca%2C%2088%20St%20John%20St%2C%20London%20EC1M%204EH!8m2!1d51.5220861!2d-0.10167219999999999!5e0!8m2!1sen!2suk!4v1668186760021!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="contact-page">
+<img src="/images/clove-club-group-logo.svg">
+<div class="footer-inner">
+
+</div>
+</div>
+
+
+</body>
+</html>
